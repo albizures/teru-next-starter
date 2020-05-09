@@ -1,6 +1,7 @@
 module.exports = {
 	tokens: {
 		licenseYear: {
+			title: 'License Year',
 			defaultValue: new Date().getFullYear(),
 		},
 		author: {

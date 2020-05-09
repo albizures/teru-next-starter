@@ -1,18 +1,28 @@
 module.exports = {
 	tokens: {
-		license_year: {
-			defaultValue: 2020,
+		licenseYear: {
+			defaultValue: new Date().getFullYear(),
 		},
-		author: {},
-		name: {},
-		email: {},
+		author: {
+			message: "What's your name?",
+		},
+		projectName: {
+			message: 'How are you calling this new project?',
+		},
+		email: {
+			message: "What's your email?",
+		},
+		prettier: {
+			defaultValue: true,
+			message: 'Do you want to use Prettier',
+		},
 		tailwind: {
 			defaultValue: true,
-			message: 'Do you want to use tailwind?',
+			message: 'Do you want to use Tailwind CSS?',
 		},
 		typescript: {
 			defaultValue: true,
-			message: 'Do you want to use typescript?',
+			message: 'Do you want to use Typescript?',
 		},
 	},
 	files: [

@@ -1,5 +1,5 @@
 {
-	"name": "<%= tokens.name %>",
+	"name": "<%= tokens.projectName %>",
 	"version": "1.0.0",
 	"main": "index.js",
 	"author": "<%= tokens.author %> <<%= tokens.email %>>",

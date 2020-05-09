@@ -1,6 +1,6 @@
-<% if (tokens.tailwind) { %>
+<%_ if (tokens.tailwind) { _%>
 import '../styles.css';
-<% } %>
+<%_ } _%>
 import React from 'react';
 import { AppProps } from 'next/app';
 

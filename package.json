@@ -1,0 +1,34 @@
+{
+	"name": "<%= tokens.name %>",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "<%= tokens.author %> <<%= tokens.email %>>",
+	"license": "MIT",
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev",
+		"start": "next start"
+	},
+	"dependencies": {
+		"next": "^9.3.6",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	},
+	"devDependencies": {
+		<% if (tokens.tailwind) { %>
+		"@fullhuman/postcss-purgecss": "^2.2.0",
+		<% } %>
+		<% if (tokens.typescript) { %>
+		"@types/node": "^13.13.5",
+		"@types/react": "^16.9.34",
+		<% } %>
+		<% if (tokens.tailwind) { %>
+		"autoprefixer": "^9.7.6",
+		"postcss-import": "^12.0.1",
+		"tailwindcss": "^1.4.5",
+		<% } %>
+		<% if (tokens.typescript) { %>
+			"typescript": "^3.8.3"
+		<% } %>
+	}
+}
